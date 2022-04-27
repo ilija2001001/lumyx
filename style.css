@@ -1,0 +1,72 @@
+.header {
+    z-index: 2;
+}
+
+body {
+    background-color: black;
+}
+
+#lampa {
+    height: 800px;
+    animation: rotate 4s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+#navhor a {
+    color: lightgray;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+#navhor a:hover {
+    color: white;
+}
+
+#navbarNav ul {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#togglericon {
+    opacity: 50%;
+}
+
+
+#boje a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
+#boje a:hover {
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+
+}
+
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(-50deg);
+    }
+    50% {
+        filter: hue-rotate(30deg);
+
+    }
+    100% {
+        filter: hue-rotate(-50deg);
+    }
+}
+
+@media screen and (min-width:990px) {
+    .togglenav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #navhor {
+        display: none;
+    }
+}
